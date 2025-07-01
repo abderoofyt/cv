@@ -1,119 +1,52 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Junaid Abderoof | Full Stack Developer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Junaid Abderoof | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
+  <nav class="bg-gray-900 text-white p-4 flex justify-center space-x-6">
+    <a href="index.html" class="underline">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="extras.html">Extras</a>
+  </nav>
 
-  <header>
-    <div class="container">
-      <h1>Junaid Abderoof</h1>
-      <p>Full Stack Developer | AI & Automation Enthusiast</p>
-      <div class="contact">
-        <a href="tel:+27814998598">📞 081 499 8598</a> | 
-        <a href="mailto:junaid.abderoof@gmail.com">✉️ junaid.abderoof@gmail.com</a> |
-        <a href="https://linkedin.com/in/junaid-abderoof" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/abderoofyt" target="_blank">GitHub</a>
-      </div>
-    </div>
+  <header class="text-center py-16 bg-gradient-to-r from-green-500 to-emerald-700 text-white" data-aos="fade-in">
+    <h1 class="text-4xl font-bold">Junaid Abderoof</h1>
+    <p class="text-xl mt-2">Full Stack Developer & AI Enthusiast</p>
+    <p class="text-2xl font-semibold mt-6"><span id="years">0</span>+ years of experience</p>
   </header>
 
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>Detail-oriented full stack developer with over 5 years of experience in web, mobile, and automation development. Background in mentoring, process improvement, and cross-platform solutions. Passionate about innovation, AI, and user-centric design.</p>
-  </section>
-
-  <section class="skills container">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React, Angular, TypeScript</li>
-      <li><strong>Backend:</strong> Python, Django, Java, Node.js, Flutter/Dart</li>
-      <li><strong>Databases:</strong> SQLite, MySQL, MongoDB, Redis, Oracle</li>
-      <li><strong>Cloud & DevOps:</strong> AWS, Azure, Monitoring, Deployment</li>
-      <li><strong>Automation & AI:</strong> UiPath, ChatGPT, Custom Python Scripts</li>
-      <li><strong>Other Tools:</strong> Git, Sass, Adobe Suite, C/C++</li>
-    </ul>
-  </section>
-
-  <section class="experience container">
-    <h2>Experience</h2>
-
-    <div class="job">
-      <h3>HyperionDev (May 2024 – Present)</h3>
-      <p><em>Coding Mentor & Admissions Mentor</em></p>
-      <ul>
-        <li>Guide students through Python projects and tasks</li>
-        <li>Code reviews, mentorship, and admissions support</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Vodacom (March 2021 – May 2024)</h3>
-      <p><em>Automation & DevOps Developer</em></p>
-      <ul>
-        <li>Developed scalable automation scripts for web, mobile, and APIs</li>
-        <li>Deployment, testing, monitoring, and server health checks</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Amazon (Sept 2016 – Oct 2018)</h3>
-      <p><em>Chat AI Rep & Business Analyst</em></p>
-      <ul>
-        <li>Concessions Abuse Prevention and Kaizen training</li>
-        <li>Data analysis and process improvement</li>
-      </ul>
+  <section class="max-w-3xl mx-auto p-6" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4">About Me</h2>
+    <p class="mb-4">Detail-oriented full stack developer with over 5 years of experience in web, mobile, and automation development.</p>
+    <button onclick="document.getElementById('moreAbout').classList.toggle('hidden')" class="text-emerald-600 underline">Read More</button>
+    <div id="moreAbout" class="mt-4 hidden">
+      <p>Background in mentoring, process improvement, and cross-platform solutions. Passionate about innovation, AI, and user-centric design.</p>
     </div>
   </section>
 
-  <section class="projects container">
-    <h2>Projects</h2>
-    <h4>Personal Projects</h4>
-    <ul>
-      <li><strong>Websites:</strong> Five Pillars Nav, Super Hero Quiz, Versus Brackets, Reminder & Poll Apps</li>
-      <li><strong>Games (HTML):</strong> Hangman, NerdChess, Pong, Text Detective</li>
-      <li><strong>Python:</strong> Custom Chatbot, Sudoku Solver, Maze Pathfinder</li>
-      <li><strong>Java:</strong> Group Chat Server + UI, Robot Shooter Game</li>
-      <li><strong>Unity/Godot:</strong> Platformer, Bomberman, Visual Novels, Tic Tac Toe</li>
-    </ul>
-
-    <h4>Professional Websites</h4>
-    <ul>
-      <li><a href="#">Meance Car Wash</a></li>
-      <li><a href="#">Elaam Frozen Pastries</a></li>
-      <li><a href="#">Faldelah Clothings</a></li>
-      <li><a href="#">IJ Johnson Construction</a></li>
-    </ul>
-  </section>
-
-  <section class="education container">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>HyperionDev:</strong> Data Science & AI Engineering (2025, Ongoing)</li>
-      <li><strong>Software Engineering (NQF 5):</strong> 2020–2022</li>
-      <li><strong>Matric (NQF 4):</strong> 2012 – Maths, Science, CAT</li>
-    </ul>
-  </section>
-
-  <section class="extras container">
-    <h2>Additional Info</h2>
-    <ul>
-      <li>📍 Ruyterwacht, Cape Town | Code B Driver’s License (PDP)</li>
-      <li>Chess Elo: 1805 | Typing: 78 wpm | Reading: 337 wpm (92% comprehension)</li>
-      <li>Interests: Design, Animation, Photo/Video Editing</li>
-      <li>Sales/Support: Cell C, British Airways, Uber, Amazon</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Junaid Abderoof. Built with HTML & CSS.</p>
-    <p><a href="https://sites.google.com/view/junaidabderoof-cv/home" target="_blank">Google Sites Version</a></p>
+  <footer class="text-center py-6 text-sm text-gray-600">
+    © 2025 Junaid Abderoof — <a href="https://github.com/abderoofyt" class="text-blue-500">GitHub</a>
   </footer>
 
+  <script>
+    AOS.init();
+    let counter = document.getElementById("years");
+    let value = 0;
+    let interval = setInterval(() => {
+      counter.innerText = value;
+      value++;
+      if (value > 5) clearInterval(interval);
+    }, 200);
+  </script>
 </body>
 </html>
